@@ -1,0 +1,7 @@
+STATIC BAYVINES WEBSITE
+
+Pages: Home, About, Services, Jobs, Contact
+News has been removed.
+No database, admin panel, authentication, Next.js or Node.js is required.
+Contact form posts to contact.php.
+
