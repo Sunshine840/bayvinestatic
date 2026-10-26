@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.createElement("header");
 
@@ -26,11 +27,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ☰
       </button>
 
-      <nav class="nav-links">
+      <nav class="nav-links" aria-label="Main navigation">
         <a href="/about.html">About</a>
-        <a href="/services.html">Services</a>
         <a href="/jobs.html">Jobs</a>
-        <a href="/contact.html" class="btn btn-primary">Contact Us</a>
+
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLScKiw4e8Ha39n4GiYZLz19j9xCTygHsY5YHkPgcNSLV33HH4g/viewform?usp=sharing&amp;ouid=115637538471534633622"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Job Contract ↗
+        </a>
+
+        <a href="mailto:bayvine.nz@gmail.com" class="btn btn-primary">
+  Email Us
+</a>
       </nav>
 
     </div>
@@ -47,6 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
     menuButton.setAttribute(
       "aria-expanded",
       String(isOpen)
+    );
+
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Close menu" : "Open menu"
     );
 
     menuButton.textContent = isOpen ? "✕" : "☰";
